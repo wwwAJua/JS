@@ -2,3 +2,17 @@ body {
 	background: #08132F;;
 	color: cornsilk;
 }
+
+.box {
+	width: 100px;
+	height: 100px;
+	border: 1px solid white;
+}
+
+.red {
+	background-color: red;
+}
+
+.green {
+	background-color: green;
+}
