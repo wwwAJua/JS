@@ -1,14 +1,23 @@
-let button = document.querySelector('button')
-let input = document.querySelector('input')
-let h1 = document.querySelector('h1')
+let divs = document.querySelectorAll('div')
+let link = document.querySelector('a')
 
-button.addEventListener('click', function () {
-	h1.textContent = input.value
-})
+for (var i = 0; i < divs.length; i++) {
+	divs[i].addEventListener('click', function (event) {
+		event.stopPropagation()
+		console.log(this.getAttribute('id'))
+	})
+}
 
-h1.addEventListener('mouseenter', function () {
-	this.style.color = 'orange'
-})
-h1.addEventListener('mouseleave', function () {
-	this.style.color = 'white'
-})
+link.addEventListener('click', sheeft)
+
+function sheeft(event) {
+	event.preventDefault()
+
+	let div = divs[0]
+
+	if (div.style.display === 'none') {  //       //  div.style.display = div.style.display === 'none'
+		div.style.display = 'flex'         //  ===  //    ? 'flex'
+	} else {                             //       //    : 'none'
+		div.style.display = 'none'         //       //
+	}
+}

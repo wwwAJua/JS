@@ -1,10 +1,31 @@
 body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	background: #08132F;;
 	color: cornsilk;
 }
 
-div {
+a {
+	color: #fff;
+	font-size: 33px;
+}
+
+.white {
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
 	align-items: center;
+	width: 200px;
+	height: 200px;
+	background-color: #fff;
+}
+
+.green {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 100px;
+	background-color: green;
 }
